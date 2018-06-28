@@ -12,7 +12,7 @@
     
     <!-- Bootstrap core CSS-->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-    
+
     <!-- Custom fonts for this template-->
     <link href="{{asset('fonts/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     

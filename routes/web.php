@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('backend.calendar.index');
 });
+
+Route::get('/eventos', function () {
+    return view('backend.event.index');
+});
