@@ -1,25 +1,15 @@
-<div class="footer">
-    <div class="footer-inner">
-        <div class="footer-content">
-					<span class="bigger-120">
-						<span class="blue bolder">Ace</span>
-						Application &copy; 2013-2014
-					</span>
-            
-            &nbsp; &nbsp;
-            <span class="action-buttons">
-						<a href="#">
-							<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-						</a>
-
-						<a href="#">
-							<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-						</a>
-
-						<a href="#">
-							<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-						</a>
-					</span>
+<footer class="sticky-footer">
+    <div class="container">
+        <div class="text-center">
+            <small>Agenda Virtual
+                <i class="fa fa-book" aria-hidden="true"></i> 2018 &copy; Versión 0.1
+            </small>
+            <a href="#">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-rss-square"></i>
+            </a>
         </div>
     </div>
-</div>
+</footer

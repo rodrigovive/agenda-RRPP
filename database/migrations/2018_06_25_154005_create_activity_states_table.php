@@ -15,6 +15,7 @@ class CreateActivityStatesTable extends Migration
     {
         Schema::create('activity_states', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
             $table->timestamps();
         });
     }

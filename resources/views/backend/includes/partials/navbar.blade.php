@@ -1,315 +1,140 @@
-<div id="navbar" class="navbar navbar-default ace-save-state">
-    <div class="navbar-container ace-save-state" id="navbar-container">
-        <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
-            <span class="sr-only">Toggle sidebar</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        
-        <div class="navbar-header pull-left">
-            <a href="index.html" class="navbar-brand">
-                <small>
-                    <img src="image/rpplomo.png" style="width: 100px;text-decoration:none;margin: 2px;font-family: 'Audiowide';font-size: 25px;color:white;">&nbsp;Auditorio Central</a>
-            </small>
-            </a>
-        </div>
-        
-        <div class="navbar-buttons navbar-header pull-right" role="navigation">
-            <ul class="nav ace-nav">
-                <li class="grey dropdown-modal">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="ace-icon fa fa-tasks"></i>
-                        <span class="badge badge-grey">Tareas</span>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">
+        <img src="image/rpplomo.png" width="80" height="25">&nbsp;&nbsp;Auditorio Central</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Panel de Administración">
+                <a class="nav-link" href="panelp.html">
+                    <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Panel de Administración</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Usuarios">
+                <a class="nav-link" href="usuarios.html">
+                    <i class="fa fa-fw fa-users"></i>
+                    <span class="nav-link-text">Usuarios</span>
+                </a>
+            </li>
+            <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Calendario">
+                <a class="nav-link" href="calendario.html">
+                    <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+                    <span class="nav-link-text">Calendario</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Lista de Eventos">
+                <a class="nav-link" href="listaeventos.html">
+                    <i class="fa fa-fw fa-th-list" aria-hidden="true"></i>
+                    <span class="nav-link-text">Lista de Eventos</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Galeria de Eventos">
+                <a class="nav-link" href="galeriaeventos.html">
+                    <i class="fa fa-fw fa-picture-o" aria-hidden="true"></i>
+                    <span class="nav-link-text">Galeria de Eventos</span>
+                </a>
+            </li>
+            <!-- opcion cambiar de lugar -->
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Categorias">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-search"></i>
+                    <span class="nav-link-text">Categorias</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseComponents">
+                    <li>
+                        <a href=".html">Aniversarios</a>
+                    </li>
+                    <li>
+                        <a href=".html">Capacitaciones</a>
+                    </li>
+                    <li>
+                        <a href=".html">Charlas</a>
+                    </li>
+                    <li>
+                        <a href=".html">Conferencias</a>
+                    </li>
+                    <li>
+                        <a href=".html">Congresos</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- opcion cambiar de lugar -->
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+            <li class="nav-item">
+                <a class="nav-link text-center" id="sidenavToggler">
+                    <i class="fa fa-fw fa-angle-left"></i>
+                </a>
+            </li>
+        </ul>
+        <!--  inicio NavBar -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-fw fa-bell"></i>
+                    <span class="d-lg-none">Alertas
+              <span class="badge badge-pill badge-warning"></span>
+            </span>
+                    <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+                    <h6 class="dropdown-header">Proximos Eventos:</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-check fa-fw"></i>Congreso ESIQ</strong>
+              </span>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">La Escuela Profesional ESIQ, presentara su ...</div>
                     </a>
-                    
-                    <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
-                        <li class="dropdown-header">
-                            <i class="ace-icon fa fa-check"></i>
-                            tareas XDD
-                        </li>
-                        
-                        <li class="dropdown-content">
-                            <ul class="dropdown-menu dropdown-navbar">
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">probando</span>
-                                            <span class="pull-right">65%</span>
-                                        </div>
-                                        
-                                        <div class="progress progress-mini">
-                                            <div style="width:65%" class="progress-bar"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">Hardware Upgrade</span>
-                                            <span class="pull-right">35%</span>
-                                        </div>
-                                        
-                                        <div class="progress progress-mini">
-                                            <div style="width:35%" class="progress-bar progress-bar-danger"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">Unit Testing</span>
-                                            <span class="pull-right">15%</span>
-                                        </div>
-                                        
-                                        <div class="progress progress-mini">
-                                            <div style="width:15%" class="progress-bar progress-bar-warning"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">Bug Fixes</span>
-                                            <span class="pull-right">90%</span>
-                                        </div>
-                                        
-                                        <div class="progress progress-mini progress-striped active">
-                                            <div style="width:90%" class="progress-bar progress-bar-success"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="dropdown-footer">
-                            <a href="#">
-                                See tasks with details
-                                <i class="ace-icon fa fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                
-                <li class="purple dropdown-modal">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="ace-icon fa fa-bell icon-animated-bell"></i>
-                        <span class="badge badge-important">8</span>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-check fa-fw"></i>Congreso ESIQ</strong>
+              </span>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">La Escuela Profesional ESIQ, presentara su ...</div>
                     </a>
-                    
-                    <ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
-                        <li class="dropdown-header">
-                            <i class="ace-icon fa fa-exclamation-triangle"></i>
-                            8 Notifications
-                        </li>
-                        
-                        <li class="dropdown-content">
-                            <ul class="dropdown-menu dropdown-navbar navbar-pink">
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-												<span class="pull-left">
-													<i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
-													New Comments
-												</span>
-                                            <span class="pull-right badge badge-info">+12</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#">
-                                        <i class="btn btn-xs btn-primary fa fa-user"></i>
-                                        Bob just signed up as an editor ...
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-												<span class="pull-left">
-													<i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
-													New Orders
-												</span>
-                                            <span class="pull-right badge badge-success">+8</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-												<span class="pull-left">
-													<i class="btn btn-xs no-hover btn-info fa fa-twitter"></i>
-													Followers
-												</span>
-                                            <span class="pull-right badge badge-info">+11</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="dropdown-footer">
-                            <a href="#">
-                                See all notifications
-                                <i class="ace-icon fa fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                
-                <li class="green dropdown-modal">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
-                        <span class="badge badge-success">5</span>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-check fa-fw"></i>Congreso ESIQ</strong>
+              </span>
+                        <span class="small float-right text-muted">11:21 AM</span>
+                        <div class="dropdown-message small">La Escuela Profesional ESIQ, presentara su ...</div>
                     </a>
-                    
-                    <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
-                        <li class="dropdown-header">
-                            <i class="ace-icon fa fa-envelope-o"></i>
-                            5 Messages
-                        </li>
-                        
-                        <li class="dropdown-content">
-                            <ul class="dropdown-menu dropdown-navbar">
-                                <li>
-                                    <a href="#" class="clearfix">
-                                        <img src="assets/images/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
-                                        <span class="msg-body">
-												<span class="msg-title">
-													<span class="blue">Alex:</span>
-													Ciao sociis natoque penatibus et auctor ...
-												</span>
-
-												<span class="msg-time">
-													<i class="ace-icon fa fa-clock-o"></i>
-													<span>a moment ago</span>
-												</span>
-											</span>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#" class="clearfix">
-                                        <img src="assets/images/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
-                                        <span class="msg-body">
-												<span class="msg-title">
-													<span class="blue">Susan:</span>
-													Vestibulum id ligula porta felis euismod ...
-												</span>
-
-												<span class="msg-time">
-													<i class="ace-icon fa fa-clock-o"></i>
-													<span>20 minutes ago</span>
-												</span>
-											</span>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#" class="clearfix">
-                                        <img src="assets/images/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
-                                        <span class="msg-body">
-												<span class="msg-title">
-													<span class="blue">Bob:</span>
-													Nullam quis risus eget urna mollis ornare ...
-												</span>
-
-												<span class="msg-time">
-													<i class="ace-icon fa fa-clock-o"></i>
-													<span>3:15 pm</span>
-												</span>
-											</span>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#" class="clearfix">
-                                        <img src="assets/images/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
-                                        <span class="msg-body">
-												<span class="msg-title">
-													<span class="blue">Kate:</span>
-													Ciao sociis natoque eget urna mollis ornare ...
-												</span>
-
-												<span class="msg-time">
-													<i class="ace-icon fa fa-clock-o"></i>
-													<span>1:33 pm</span>
-												</span>
-											</span>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#" class="clearfix">
-                                        <img src="assets/images/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
-                                        <span class="msg-body">
-												<span class="msg-title">
-													<span class="blue">Fred:</span>
-													Vestibulum id penatibus et auctor ...
-												</span>
-
-												<span class="msg-time">
-													<i class="ace-icon fa fa-clock-o"></i>
-													<span>10:09 am</span>
-												</span>
-											</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="dropdown-footer">
-                            <a href="inbox.html">
-                                See all messages
-                                <i class="ace-icon fa fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                
-                <li class="light-blue dropdown-modal">
-                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
-                        <span class="user-info">
-								<small>Bienvenido,</small>
-								Jason
-							</span>
-                        
-                        <i class="ace-icon fa fa-caret-down"></i>
+                </div>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="image/teatro.jpg" class="rounded-circle" alt="Cinque Terre" width="23" height="23">
+                    <span class="info">
+              <small>Bienvenido,</small>&nbsp;Carlos</span>
+                    </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+                    <h6 class="dropdown-header">Perfil de Usuario:</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="perfil.html">
+                        <i class="fa fa-fw fa-user"></i>Perfil
                     </a>
-                    
-                    <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-                        <li>
-                            <a href="#">
-                                <i class="ace-icon fa fa-cog"></i>
-                                Configuraciones
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="profile.html">
-                                <i class="ace-icon fa fa-user"></i>
-                                Perfil
-                            </a>
-                        </li>
-                        
-                        <li class="divider"></li>
-                        
-                        <li>
-                            <a href="#">
-                                <i class="ace-icon fa fa-power-off"></i>
-                                Cerrar Cesión
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+            </li>
+        </ul>
     </div>
-    <!-- /.navbar-container -->
-</div>
+</nav>
