@@ -1,0 +1,258 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DataTypesTableSeeder extends Seeder
+{
+
+    /**
+     * Auto generated seed file
+     *
+     * @return void
+     */
+    public function run()
+    {
+        
+
+        \DB::table('data_types')->delete();
+        
+        \DB::table('data_types')->insert(array (
+            0 => 
+            array (
+                'id' => 1,
+                'name' => 'users',
+                'slug' => 'users',
+                'display_name_singular' => 'User',
+                'display_name_plural' => 'Users',
+                'icon' => 'voyager-person',
+                'model_name' => 'TCG\\Voyager\\Models\\User',
+                'policy_name' => 'TCG\\Voyager\\Policies\\UserPolicy',
+                'controller' => '',
+                'description' => '',
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => NULL,
+                'created_at' => '2018-08-13 22:31:11',
+                'updated_at' => '2018-08-13 22:31:11',
+            ),
+            1 => 
+            array (
+                'id' => 2,
+                'name' => 'menus',
+                'slug' => 'menus',
+                'display_name_singular' => 'Menu',
+                'display_name_plural' => 'Menus',
+                'icon' => 'voyager-list',
+                'model_name' => 'TCG\\Voyager\\Models\\Menu',
+                'policy_name' => NULL,
+                'controller' => '',
+                'description' => '',
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => NULL,
+                'created_at' => '2018-08-13 22:31:12',
+                'updated_at' => '2018-08-13 22:31:12',
+            ),
+            2 => 
+            array (
+                'id' => 3,
+                'name' => 'roles',
+                'slug' => 'roles',
+                'display_name_singular' => 'Role',
+                'display_name_plural' => 'Roles',
+                'icon' => 'voyager-lock',
+                'model_name' => 'TCG\\Voyager\\Models\\Role',
+                'policy_name' => NULL,
+                'controller' => '',
+                'description' => '',
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => NULL,
+                'created_at' => '2018-08-13 22:31:12',
+                'updated_at' => '2018-08-13 22:31:12',
+            ),
+            3 => 
+            array (
+                'id' => 13,
+                'name' => 'estados_actividad',
+                'slug' => 'estados-actividad',
+                'display_name_singular' => 'Estados Actividad',
+                'display_name_plural' => 'Estados Actividads',
+                'icon' => NULL,
+                'model_name' => 'App\\EstadosActividad',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null}',
+                'created_at' => '2018-08-14 18:12:58',
+                'updated_at' => '2018-08-14 18:12:58',
+            ),
+            4 => 
+            array (
+                'id' => 14,
+                'name' => 'organizador_actividad',
+                'slug' => 'organizador-actividad',
+                'display_name_singular' => 'Organizador Actividad',
+                'display_name_plural' => 'Organizador Actividades',
+                'icon' => NULL,
+                'model_name' => 'App\\OrganizadorActividad',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null}',
+                'created_at' => '2018-08-14 19:14:20',
+                'updated_at' => '2018-08-14 19:14:20',
+            ),
+            5 => 
+            array (
+                'id' => 15,
+                'name' => 'actividades',
+                'slug' => 'actividades',
+                'display_name_singular' => 'Actividad',
+                'display_name_plural' => 'Actividades',
+                'icon' => NULL,
+                'model_name' => 'App\\Actividades',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null}',
+                'created_at' => '2018-08-14 19:21:37',
+                'updated_at' => '2018-08-14 19:21:37',
+            ),
+            6 => 
+            array (
+                'id' => 16,
+                'name' => 'asistentes',
+                'slug' => 'asistentes',
+                'display_name_singular' => 'Asistente',
+                'display_name_plural' => 'Asistentes',
+                'icon' => NULL,
+                'model_name' => 'App\\Asistentes',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null}',
+                'created_at' => '2018-08-14 19:40:10',
+                'updated_at' => '2018-08-14 19:40:10',
+            ),
+            7 => 
+            array (
+                'id' => 17,
+                'name' => 'categoria_actividad',
+                'slug' => 'categoria-actividad',
+                'display_name_singular' => 'Categoria Actividad',
+                'display_name_plural' => 'Categoria Actividades',
+                'icon' => 'voyager-categories',
+                'model_name' => 'App\\CategoriaActividad',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null}',
+                'created_at' => '2018-08-14 21:08:12',
+                'updated_at' => '2018-08-14 21:08:12',
+            ),
+            8 => 
+            array (
+                'id' => 18,
+                'name' => 'lugar',
+                'slug' => 'lugar',
+                'display_name_singular' => 'Lugar',
+                'display_name_plural' => 'Lugares',
+                'icon' => NULL,
+                'model_name' => 'App\\Lugar',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null}',
+                'created_at' => '2018-08-14 21:08:45',
+                'updated_at' => '2018-08-14 21:08:45',
+            ),
+            9 => 
+            array (
+                'id' => 19,
+                'name' => 'registrador_actividad',
+                'slug' => 'registrador-actividad',
+                'display_name_singular' => 'Registrador Actividad',
+                'display_name_plural' => 'Registrador Actividades',
+                'icon' => 'voyager-group',
+                'model_name' => 'App\\RegistradorActividad',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null}',
+                'created_at' => '2018-08-14 21:09:25',
+                'updated_at' => '2018-08-14 21:13:48',
+            ),
+            10 => 
+            array (
+                'id' => 20,
+                'name' => 'categories',
+                'slug' => 'categories',
+                'display_name_singular' => 'Category',
+                'display_name_plural' => 'Categories',
+                'icon' => 'voyager-categories',
+                'model_name' => 'TCG\\Voyager\\Models\\Category',
+                'policy_name' => NULL,
+                'controller' => '',
+                'description' => '',
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => NULL,
+                'created_at' => '2018-09-25 03:12:56',
+                'updated_at' => '2018-09-25 03:12:56',
+            ),
+            11 => 
+            array (
+                'id' => 21,
+                'name' => 'posts',
+                'slug' => 'posts',
+                'display_name_singular' => 'Post',
+                'display_name_plural' => 'Posts',
+                'icon' => 'voyager-news',
+                'model_name' => 'TCG\\Voyager\\Models\\Post',
+                'policy_name' => 'TCG\\Voyager\\Policies\\PostPolicy',
+                'controller' => '',
+                'description' => '',
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => NULL,
+                'created_at' => '2018-09-25 03:12:57',
+                'updated_at' => '2018-09-25 03:12:57',
+            ),
+            12 => 
+            array (
+                'id' => 22,
+                'name' => 'pages',
+                'slug' => 'pages',
+                'display_name_singular' => 'Page',
+                'display_name_plural' => 'Pages',
+                'icon' => 'voyager-file-text',
+                'model_name' => 'TCG\\Voyager\\Models\\Page',
+                'policy_name' => NULL,
+                'controller' => '',
+                'description' => '',
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => NULL,
+                'created_at' => '2018-09-25 03:12:57',
+                'updated_at' => '2018-09-25 03:12:57',
+            ),
+        ));
+        
+        
+    }
+}
