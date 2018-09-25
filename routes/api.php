@@ -13,6 +13,16 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::group(['namespace' => 'Api', 'as' => 'api.'], function () {
+
+    Route::group(['as' => 'activity.'], function () {
+
+        Route::get('/activities', 'ActivityController@getActivities')->name('list');
+
+    });
+
+});
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
