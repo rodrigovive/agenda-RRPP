@@ -1,4 +1,4 @@
-<p align="center">Agenda for UNJBG-OSIS ( RRPP )</p>
+<p align="center">Agenda Auditorium for Jorge Basadre Grohmann National University</p>
 
 <p align="center">
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
