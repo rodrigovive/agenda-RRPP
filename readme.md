@@ -21,6 +21,12 @@ php artisan migrate --seed
 ```
 php artisan serve
 ```
+### API - AGENDA - UNJBG
+List Activities
+```
+/api/activities
+```
+
 
 ### Compiles and hot-reloads for development
 ```

@@ -13,15 +13,15 @@ class ActivityResource extends Resource
      */
     public function toArray($request)
     {
-        
-
+    
         return [ 
             'id' => $this->id,
             'description' => $this->detalles,
-            'hour' => $this->hora,
+            'hour_initial' => $this->hora_inicial,
+            'hour_end' => $this->hora_final,
             'title' => $this->titulo,
-            'date_initial' => $this->fecha_inicio,
-            'data_end' => $this->fecha_final
+            'date' => $this->fecha,
+            //'data_end' => $this->fecha_final
         ];
     }
 }

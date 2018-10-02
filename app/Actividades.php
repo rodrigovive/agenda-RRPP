@@ -11,6 +11,6 @@ class Actividades extends Model
     protected $table = 'actividades';
 
     protected $fillable = [
-      'detalles', 'hora','fecha_inicio','fecha_final', 'lugar', 'categoria_id', 'organizador_id', 'registrador_id', 'estados_id','titulo'
+      'detalles', 'hora_inicial','hora_final','fecha','lugar', 'categoria_id', 'organizador_id', 'registrador_id', 'estados_id','titulo'
     ];
 }
